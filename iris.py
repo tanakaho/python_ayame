@@ -8,7 +8,7 @@ iris_data = pd.read_csv("iris.csv", encoding="utf-8")
 
 #データをラベルと入力データに分離
 y = iris_data.loc[:,"Name"]
-x = iris_data.loc[:,["SepalLength","SepalWidth","PetalLength","PetaWidth"]]
+x = iris_data.loc[:,["SepalLength","SepalWidth","PetalLength","PetalWidth"]]
 
 #学習用とテスト用に分離
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, train_size = 0.8, shuffle = True)
